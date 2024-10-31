@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.foundry-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.inventory, .craft-section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+}
+
+.inventory {
+    max-height: 150px; /* Limit the height of the resource list */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.craft-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    gap: 15px; /* Space between cards */
+    max-height: 400px; /* Limit the height of the crafting section */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.item-card {
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.craft-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.craft-button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+.craft-button:hover:not(:disabled) {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}

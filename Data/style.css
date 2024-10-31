@@ -1,0 +1,140 @@
+/* Reset browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #81ecec, #74b9ff, #a29bfe);
+    font-family: 'Poppins', sans-serif;
+    animation: backgroundAnimation 10s infinite alternate;
+  }
+  
+  @keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 350px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .counter-display {
+    margin-bottom: 15px;
+  }
+  
+  .counter {
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 5px;
+    animation: pop 0.3s ease;
+  }
+  
+  .target-label {
+    font-size: 1.2rem;
+    color: #dfe6e9;
+  }
+  
+  .target-input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .click-btn, .reset-btn {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    margin: 10px;
+  }
+  
+  .click-btn:hover, .reset-btn:hover {
+    background-color: #a29bfe;
+    transform: scale(1.1);
+  }
+  
+  .click-btn:active, .reset-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Animation for counter update */
+  @keyframes pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.user-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.user-card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.user-card a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.user-card a:hover {
+    text-decoration: underline;
+}
